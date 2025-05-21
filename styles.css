@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #666;
+}
+
+.container {
+  max-width: 640px;
+  width: 100%;
+  height: 1136px;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: auto;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.logo {
+  color: #f58220;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 .registration{
+font-family: 'Didot', serif;
+  font-size: 40px;
+  color: #4a4848;
+  text-align: center;;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+h1 {
+font-family: 'Didot', serif;
+  font-size: 40px;
+  color: #4a4848;
+  text-align: left;
+  margin-left: -40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+
+.subtitle {
+  color: #ec7e17;
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.subtitle2{
+  color: #7c7a78;
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Page 1 Styles */
+.phone-input {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  color: #666;
+}
+
+.country-code span {
+  margin-right: 5px;
+}
+
+input[type="tel"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.verify-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-btn,
+.continue-btn,
+.finish-btn {
+  background-color: #f58220;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.check-btn:hover,
+.continue-btn:hover,
+.finish-btn:hover {
+  background-color: #e67615;
+}
+
+.check-btn:disabled,
+.continue-btn:disabled {
+  background-color: #f5822080;
+  cursor: not-allowed;
+}
+
+/* Page 2 Styles */
+.form-group {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.birthday-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.birthday-inputs input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.checkbox-label {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Page 3 Styles */
+.summary-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.summary-card h2 {
+  color: #f58220;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.summary-item {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.summary-label {
+  font-weight: 500;
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.summary-value {
+  color: #333;
+}
+
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  align-self: flex-start;
+  margin-left: 10px;
+  display: none;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #999;
+  border-top: 1px solid #eee;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

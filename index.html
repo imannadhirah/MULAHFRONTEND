@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULAH - Loyalty Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1: Phone Verification -->
+        <div class="page" id="page1">
+            <header>
+                <div class="logo">MULAH</div>
+            </header>
+            
+            <main>
+                <h1>Hello,<br>Welcome !</h1>
+                
+                <p class="subtitle">Check Your Loyalty Points & Rewards</p>
+                
+                <div class="phone-input">
+                    <div class="country-code">
+                        <span>+60</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                            <path d="M1 1L5 5L9 1" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <input type="tel" id="phone" placeholder="Enter your mobile number">
+                    <button class="verify-btn" id="verifyBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="9" stroke="#F58220" stroke-width="2"/>
+                            <path d="M6 10L9 13L14 7" stroke="#F58220" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <p class="error-message" id="phoneError">*Please enter a valid phone number.</p>
+                
+                <button class="check-btn" id="checkBtn">Check Loyalty Points</button>
+            </main>
+            
+            <footer>
+                <p>Powered by <a href="https://MulahRewards.com">MulahRewards.com</a></p>
+            </footer>
+        </div>
+
+        <!-- Page 2: Registration Form -->
+        <div class="page" id="page2" style="display: none;">
+            <header>
+                <div class="logo">MULAH</div>
+            </header>
+            
+            <main>
+                
+                <h1 class="registration">Registration</h1>
+                
+                <p class = "subtitle2">Please fill up your details.</p>
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                    <p class="error-message" id="nameError">*Please insert a name.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthday">Birthday</label>
+                    <div class="birthday-inputs">
+                        <input type="text" id="day" placeholder="DD" maxlength="2">
+                        <input type="text" id="month" placeholder="MM" maxlength="2">
+                        <input type="text" id="year" placeholder="YYYY" maxlength="4">
+                    </div>
+                    <p class="error-message" id="birthdayError">*Please insert your birthday.</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <p class="error-message" id="emailError">*Please insert a valid email address.</p>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="noEmail">
+                        <label for="noEmail" class="checkbox-label">No email address</label>
+                    </div>
+                </div>
+                
+                <button class="continue-btn" id="continueBtn">Continue</button>
+            </main>
+            
+            <footer>
+                <p>Powered by <a href="https://MulahRewards.com">MulahRewards.com</a></p>
+            </footer>
+        </div>
+
+        <!-- Page 3: Summary Page -->
+        <div class="page" id="page3" style="display: none;">
+            <header>
+                <div class="logo">MULAH</div>
+            </header>
+            
+            <main>
+                <h1>Registration<br>Complete</h1>
+                
+                <p class="subtitle">Thank you for registering!</p>
+                
+                <div class="summary-card">
+                    <h2>Your Information</h2>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Phone Number:</span>
+                        <span class="summary-value" id="summaryPhone"></span>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Name:</span>
+                        <span class="summary-value" id="summaryName"></span>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Birthday:</span>
+                        <span class="summary-value" id="summaryBirthday"></span>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <span class="summary-label">Email:</span>
+                        <span class="summary-value" id="summaryEmail"></span>
+                    </div>
+                </div>
+                
+                <button class="finish-btn" id="finishBtn">Finish</button>
+            </main>
+            
+            <footer>
+                <p>Powered by <a href="https://MulahRewards.com">MulahRewards.com</a></p>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
